@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding 1 | MUST 4707</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Coding 1 | MUST 4707</h1>
+
+<h2>Modifying an Existing Object</h2>
+<p>In this assignment, you will update the file <code>script.js</code> and commit it to your assignment repository. Your task will be to add <strong>two new properties</strong> to an existing object and test your work using the JavaScript Console in the browser.</p>
+<hr>
+
+<h3>Accessing the Assignment Materials</h3>
+<ol>
+    <li>Navigate to the assignment repository in the course <a href="https://github.com/MUST4707">GitHub organization</a></li>
+    <li>Click on the green <code>Use this template</code> button in the top right corner.</li>
+    <li>Choose 'Create a new repository'</li>
+    <li>Set up the repo name under your account.</li>
+    <li>Click <code>Create repository</code></li>
+</ol>
+
+<p><em>You should now be at your own personal repository with the assignment materials.</em></p>
+<ol start="6">
+    <li>Click on the green <code>&lt;&gt; Code</code> button and select <code>Open with GitHub Desktop</code></li>
+</ol>
+
+<p><em>You should now be in your GitHub Desktop application that has a pop-up window called 'Clone a Repository'</em></p>
+
+<ol start="7">
+    <li>Make sure the local path is where you would like to save this repo.</li>
+    <li>Hit <code>Clone</code></li>
+    <li>You should now click the <code>Open in Visual Studio Code</code> button or navigate to your files and open the folder in Visual Studio Code.</li>
+    <li>After you finish working on your project please return to GitHub Desktop and
+        <ol type="a">
+            <li>Commit your changes to the <code>master</code> (don’t forget to add a summary description)</li>
+            <li>Click on the <code>Push Origin</code> to sync your commit with the GitHub cloud.</li>
+        </ol>
+    </li>
+</ol>
+
+<h3>Task Description</h3>
+<ol>
+    <li>The provided <code>script.js</code> contains an object called <code>song</code> with a few properties already defined.</li>
+    <li>Your task is to add <strong>two new properties</strong> to <code>song</code>:
+        <ul>
+            <li>A property named <code>releaseYear</code> that contains a number (e.g., <code>2023</code>).</li>
+            <li>A property named <code>isAvailable</code> that contains a boolean value (<code>true</code> or <code>false</code>).</li>
+        </ul>
+    </li>
+    <li>After adding these properties, make sure they meet the requirements listed below and pass the provided tests.</li>
+</ol>
+<hr>
+
+<h3>Coding Instructions</h3>
+<p>You will add your code between these comments in <code>script.js</code>:</p>
+<pre>
+<code>//↓↓↓↓↓↓↓↓↓↓↓↓YOUR CODE goes below here↓↓↓↓↓↓↓↓↓↓↓↓
+
+let song = {
+   title: "Apple",
+   album: "Brat"
+}
+
+//↑↑↑↑↑↑↑↑↑↑YOUR CODE goes above here↑↑↑↑↑↑↑↑↑↑
+</code>
+    </pre>
+
+<hr>
+
+<h3>Coding Steps</h3>
+<ol>
+    <li>Open the <code>script.js</code> file in your repository.</li>
+    <li>Add the following properties to the existing object:
+        <ul>
+            <li><code>releaseYear</code> (type: number)</li>
+            <li><code>isAvailable</code> (type: boolean)</li>
+        </ul>
+    </li>
+    <li>Save your changes and commit the file in GitHub Desktop.</li>
+</ol>
+<hr>
+
+<h3>Testing Your Work</h3>
+
+<h4>Testing (Using VS Code and your Browser)</h4>
+<ol>
+    <li>Make sure you have saved all of your files, then click on the <code>index.html</code> file.</li>
+    <li>Click on "Go Live"</li>
+    <li>Once the browser window opens with the assignment webpage, open the JavaScript Console</li>
+    <li>Run the following test to make sure there are no errors.
+        <ol>
+            <li>Test 1: <code>song</code>
+                <ul>
+                    <li>the result should be <code>{title: 'Apple', album: 'Brat', releaseYear: 2023, isAvailable: false}</code></li>
+                </ul>
+            </li>
+            <li>Test 2: <code>typeof song</code>
+                <ul>
+                    <li>result: <code>'object'</code></li>
+                </ul>
+            </li>
+            <li>Test 3: <code>song.releaseYear</code>
+                <ul>
+                    <li>result: <code>'2023'</code> (it should be whatever you put in for the release year)</li>
+                </ul>
+            </li>
+            <li>Test 4: <code>typeof song.releaseYear</code>
+                <ul>
+                    <li>result: <code>'number'</code></li>
+                </ul>
+            </li>
+            <li>Test 5: <code>song.isAvailable</code>
+                <ul>
+                    <li>result: <code>false</code> (it should be whatever boolean you put in for the availability)</li>
+                </ul>
+            </li>
+            <li>Test 6: <code>typeof song.isAvailable</code>
+                <ul>
+                    <li>result: <code>boolean</code></li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ol>
+
+<p><em>If any of the above commands return an error or an unexpected result, please return to your code and update to fix the error. Repeat this process until there are no errors.</em></p>
+<hr>
+
+<h3>Submission Steps</h3>
+<ol>
+    <li>Upload your <code>script.js</code> to the Canvas assignment.</li>
+</ol>
+
+<h3>Grading Criteria</h3>
+<p>The following criteria will be checked:</p>
+<ol>
+    <li><code>song</code> exists</li>
+    <li><code>song</code> is an <code>'object'</code></li>
+    <li>The <code>releaseYear</code> property exists.</li>
+    <li>The <code>releaseYear</code> property type is a number.</li>
+    <li>The <code>isAvailable</code> property exists.</li>
+    <li>The <code>isAvailable</code> property type is a boolean.</li>
+</ol>
+<hr>
+</body>
+</html>
